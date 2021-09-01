@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beloved fx-963   </title>
+    <link rel="icon" href="Images/icons8_Calculator_26px.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap-4.5.2/dist/css/bootstrap.min.css">
+    <script src="index.js"></script>
+</head>
+<body id="body">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+            <div class="col-12 col-sm-9 col-md-6 col-lg-5 col-xl-4 shadow mt-2" id="scalculator">
+                <div class="mt-" id="calculator">
+                    <div class="row mb-1 pt-2">
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4 text-dark" id="powered"> 
+                            <i id="beloved">Beloved fx-963</i>
+                            <br>
+                            Powered by Beloved
+                            <div class="row pl-3 mt-2 mb-2">
+                                <div class="col-10 border rounded bg-light border border-dark h6 " id="myTime"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row pl-2 pr-2">
+                        <div id="display" class="col-12 p-0 bg-white">
+                            <input id="input" class="col-12 pt-o pl-1 pr-1 pb-0 text-white"></input>
+                            <div id="displayanswer" class="col-12 text-white"></div>
+                        </div>
+                    </div>
+    
+                    <div class="row pl-3 pr-3 mt-2">
+                        <div class="col-4">
+                            <div class="row">
+                                <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons">SHIFT</button>
+                                <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons">ALPHA</button>
+                            </div>
+                            <div class="row mt-3">
+                                <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons"  id="buttons" onclick="numberFunction('sinh')">sinh</button>
+                                <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons"  id="buttons" onclick="numberFunction('cosh')">cosh</button>
+                            </div>
+                        </div>
+                        <div class="col ml-3 mr-3 bg-secondary" id="center">
+    
+                        </div>
+    
+                        <div class="col-4">
+                            <div class="row">
+                                <button class="mr-1 border  pl-1 pr-1 col bg-dark text-white" id="buttons">Mode</button>
+                                <button class="border  pl-1 pr-1 col bg-danger" onclick="onFunction('ON')" id="of">ON</button>
+                            </div>
+                            <div class="row mt-3">
+                                <button class="mr-1 pl-1 pr-1 bg-dark text-white col border" id="buttons">X <sup>-1</sup></button>
+                                <button class=" pl-1 pr-1 bg-dark text-white col border" id="buttons">Log <sub>a</sub> X</button>
+                            </div>
+                        </div>                  
+                    </div>
+    
+                    <div class="row pl-4 pr-4 mt-3">
+                        <button class="mr-1 pl-1 bg-dark text-white pr-1 col border" id="buttons" onclick="numberFunction('tanh')">tanh</button>
+                        <button class="mr-1 pl-1 bg-dark text-white pr-1 col border" id="buttons" onclick="numberFunction('&#8730;')">&#8730;X</button>
+                        <button class="mr-1 pl-1 bg-dark text-white pr-1 col border" id="buttons">X <sup>2</sup></button>
+                        <button class="mr-1 pl-1 bg-dark text-white pr-1 col border" id="buttons">X <sup>x</sup> </button>
+                        <button class="mr-1 pl-1 bg-dark text-white pr-1 col border" id="buttons" onclick="numberFunction('log')">log (</button>
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons" onclick="numberFunction('In')">In</button>
+                    </div>
+    
+                    <div class="row pl-4 pr-4 mt-3">
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons" onclick="negativeFunction('-')">(-)</button>
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons">n!</button>
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons">hyp</button>
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" onclick="numberFunction('sin')" id="buttons">sin</button>
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons" onclick="numberFunction('cos')">cos</button>
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons" onclick="numberFunction('tan')">tan</button>
+                    </div>
+    
+                    <div class="row pl-4 pr-4 mt-3">
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons">RCL</button>
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" id="buttons">ENG</button>
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" onclick="numberFunction('(')" id="buttons">(</button>
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border" onclick="numberFunction(')')" id="buttons">)</button>
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border"id="buttons" onclick="numberFunction('⊼')"> &#8892;</button>
+                        <button class="mr-1 pl-1 pr-1 col bg-dark text-white border"id="buttons">M+</button>
+                    </div>
+    
+                    <div class="row pl-4 pr-4 mt-3">
+                        <button class="col mr-1 border bg-secondary" onclick="numberFunction(7)" id="buttons">7</button>
+                        <button class="col mr-1 border bg-secondary" onclick="numberFunction(8)" id="buttons">8</button>
+                        <button class="col mr-1 border bg-secondary" onclick="numberFunction(9)" id="buttons">9</button>
+                        <button class="mr-1 bg-dark text-white border col" onclick="cancelFunction('CLR')" id="buttons">CLR</button>
+                        <button class="mr-1 bg-primary text-white border col" onclick="cancelFunction('AC')" id="buttons">AC</button>
+                    </div>
+    
+                    <div class="row pl-4 pr-4 mt-3">
+                        <button class="col mr-1 border bg-secondary" onclick="numberFunction(4)" id="buttons">4</button>
+                        <button class="col mr-1 border bg-secondary" onclick="numberFunction(5)" id="buttons">5</button>
+                        <button class="col mr-1 border bg-secondary" onclick="numberFunction(6)" id="buttons">6</button>
+                        <button class="mr-1 bg-dark text-white border col" onclick="numberFunction('*')" id="buttons">x</button>
+                        <button class="mr-1 bg-dark text-white border col" onclick="numberFunction('/')" id="buttons">/</button>
+                    </div>
+    
+                    <div class="row pl-4 pr-4 mt-3">
+                        <button class="col mr-1 border bg-secondary"  onclick="numberFunction(1)" id="buttons">1</button>
+                        <button class="col mr-1 border bg-secondary"  onclick="numberFunction(2)" id="buttons">2</button>
+                        <button class="col mr-1 border bg-secondary"  onclick="numberFunction(3)" id="buttons">3</button>
+                        <button class="mr-1 bg-dark text-white border col" onclick="numberFunction('+')" id="buttons">+</button>
+                        <button class="mr-1 bg-dark text-white border col" onclick="numberFunction('-')" id="buttons">-</button>
+                    </div>
+    
+                    <div class="row pl-4 pr-4 mt-3 pb-4 ">
+                        <button class="col mr-1 border bg-secondary" onclick="numberFunction(0)" id="buttons">0</button>
+                        <button class="col mr-1 border bg-secondary" onclick="numberFunction('.')" id="buttons">.</button>
+                        <button class="col mr-1 border bg-secondary"  onclick="numberFunction('*10')" id="buttons">x10 <sup></sup></button>
+                        <button class="col mr-1 border bg-secondary" onclick="answerFunction('Ans')" id="buttons">Ans</button>
+                        <button class="mr-1 bg-dark text-white border col" onclick="equalFunction('=')" id="buttons">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
